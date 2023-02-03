@@ -1,0 +1,28 @@
+package com.ThreadsProgram.Drashti;
+
+public class Thread7 extends Thread {
+	
+	public void run()
+	{
+		try {
+			//Thread.sleep(1000);
+			System.out.println("drashti");
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			
+			throw new RuntimeException("Thread Interupted"+e);
+				
+		}
+	}	
+
+	public static void main(String[] args) {
+		Thread7 t = new Thread7();
+		t.start();
+		try {
+			t.interrupt();
+		} catch (Exception e) {
+			System.out.println("exception Handled"+e);
+		}
+		}
+	}
+	

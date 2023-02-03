@@ -1,0 +1,61 @@
+package com.ThreadsProgram.Drashti;
+
+class Printer
+{
+	 /*synchronized*/ void printdoc(int a)
+	{
+		for(int i=1;i<=10;i++)
+		{
+			try {
+				Thread.sleep(500);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			System.out.println("drashti"+i);
+		}
+	}
+}
+class MyThread extends Thread
+{
+	Printer ref;
+	public MyThread(Printer p) {
+		
+		ref=p;
+	}
+	public void run() {
+		ref.printdoc(50);
+	}
+}
+class YourThread extends Thread
+{
+	Printer ref;
+	public YourThread(Printer p) {
+		
+		ref=p;
+	}
+	public void run() {
+		ref.printdoc(50);
+	}
+}
+public class Thread1 {
+
+	public static void main(String[] args) {
+		
+		System.out.println("Starting");
+		
+		Printer p =new Printer();
+		p.printdoc(10);
+		MyThread m =new MyThread(p);
+		YourThread y = new YourThread(p);
+		m.start();
+		/*try {
+			m.join();
+		} catch (Exception e) {
+			System.out.println(e);
+		}*/
+		y.start();
+		
+		System.out.println("Ending");
+	}
+	
+}

@@ -1,0 +1,23 @@
+package com.Collection.Drashti;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
+
+public class Collection8 {
+	public static int count=1;
+public static void main(String[] args) {
+	Collection<Character> a1=new ArrayList<Character>();
+	for (char i = 'A'; i <='Z'; i++) {
+		a1.add(i);
+	}
+	
+	
+	Object[] o=a1.toArray();
+	for(int i=0;i<o.length;i++)
+	{
+		System.out.println("Element" +count++ +"::"+o[i]);
+	}
+	
+}
+}

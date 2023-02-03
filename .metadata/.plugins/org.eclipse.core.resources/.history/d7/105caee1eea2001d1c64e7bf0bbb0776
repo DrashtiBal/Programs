@@ -1,0 +1,25 @@
+package String_Programs;
+
+public class StringReverse1 {
+	
+	static String reverse(String s)
+	  {
+	    if (s==null || s.length()<=1) 
+	    {
+	      return s;
+	    }
+	    else { 
+	   
+	  	return reverse(s.substring(1))+s.charAt(0);
+	    }
+	  }
+	 
+	  public static void main(String[] args)
+	  {
+	   String s="balsara ";
+	   reverse(s);
+	   System.out.println(s);
+	   
+	  }
+
+}

@@ -1,0 +1,59 @@
+package com.ThreadsProgram.Drashti;
+
+public class Thread8 {
+ 
+	
+	public static void main(String[] args) {
+		Parent1 d1 = new Parent1();
+		
+		
+		Thread t1 =new Thread(new Runnable() {
+			
+			@Override
+			public void run() {
+				try {
+					d1.test1();
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} 
+				
+				
+			}
+		});
+		Thread t2 = new Thread(new Runnable() {
+			
+			@Override
+			public void run() {
+				d1.test2();
+				
+			}
+		});
+		
+		t1.start();
+		t2.start();
+		
+		System.out.println("Main Thread");
+	}
+}
+class Parent1{
+		public void test1() throws InterruptedException
+		{
+			for(int i=1;i<10;i++)
+			{
+				if(i==5) {
+					Thread.sleep(1000);
+				}
+				System.out.println("From 1 to 10  "+i);
+			}
+		}
+	
+		public void test2()
+		{
+			for(int i=10;i<20 ;i++)
+			{
+				System.out.println("From 10 to 20  "+i);
+			}
+		}
+	}
+

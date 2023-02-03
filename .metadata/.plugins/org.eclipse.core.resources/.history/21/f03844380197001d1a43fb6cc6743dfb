@@ -1,0 +1,27 @@
+package com.ThreadsProgram.Drashti;
+
+public class Thread5 extends Thread{
+	public void run()
+	{
+		if(Thread.currentThread().isDaemon())
+		{
+			System.out.println("Daemon Thread");
+		}
+		else 
+		{
+			System.out.println("User Thread");
+		}
+
+	}
+	
+	public static void main(String[] args) {
+		
+		Thread5 t1 = new Thread5();
+		Thread5 t2 = new Thread5();
+		
+		t1.setDaemon(true);
+		
+		t1.start();
+		t2.start();
+	}
+}

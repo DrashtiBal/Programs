@@ -1,0 +1,11 @@
+package com.Collection.Drashti;
+
+import java.util.ArrayList;
+
+public class Collection6 {
+
+	ArrayList<Integer> al =new ArrayList<Integer>();
+	
+	
+	
+}

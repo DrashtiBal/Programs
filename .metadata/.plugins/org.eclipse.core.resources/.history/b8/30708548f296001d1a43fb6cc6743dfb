@@ -1,0 +1,11 @@
+package com.ThreadsProgram.Drashti;
+
+public class Thread2 {
+public static void main(String[] args) {
+	MyThread m = new MyThread();
+	 Thread t1 = new Thread();
+	 Thread t2 = new Thread();
+	 t1.start();
+	 t2.start();
+}
+}

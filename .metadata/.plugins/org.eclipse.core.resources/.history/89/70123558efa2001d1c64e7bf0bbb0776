@@ -1,0 +1,17 @@
+package singleton;
+
+public class SingleInstant {
+	
+ SingleInstant(int i){}
+
+	static SingleInstant instant = new SingleInstant(105);
+	
+	public static SingleInstant getInstant(){
+		
+		return instant;
+	}
+	
+	 
+}
+
+

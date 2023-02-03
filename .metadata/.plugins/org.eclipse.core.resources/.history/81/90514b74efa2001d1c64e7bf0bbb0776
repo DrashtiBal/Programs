@@ -1,0 +1,34 @@
+package singleton;
+
+public class Main extends SingleInstant {
+
+	Main(int i) {
+		super(i);
+		// TODO Auto-generated constructor stub
+	}
+
+	//super.SingleInstant();
+
+	public static void main(String[] args) {
+		
+		SingleInstant instantno = SingleInstant.getInstant();
+		
+		System.out.println(instantno);
+		
+		test();
+	}
+	
+	public static void test() {
+		SingleInstant instantffno = SingleInstant.getInstant();
+		
+		System.out.println(instantffno);
+		
+	}
+	public void test2() {
+		SingleInstant instant3 = SingleInstant.getInstant();
+		
+		System.out.println(instant3);
+	
+	}
+
+}

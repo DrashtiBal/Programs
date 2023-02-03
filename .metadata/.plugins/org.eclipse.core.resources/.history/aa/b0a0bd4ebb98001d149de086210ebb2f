@@ -1,0 +1,10 @@
+package com.Array.Drashti;
+
+public class Array1 {
+
+public static void main(String[] args) {
+	String [] a1 = new String[5];
+			
+	a1[]={"a","b","c","d","e","f"};
+}
+}

@@ -1,0 +1,25 @@
+package com.ThreadsProgram.Drashti;
+public class Thread3 extends Thread {
+
+public void run()
+{
+	System.out.println("drashti");
+}
+	
+
+public static void main(String[] args) {
+	
+	Thread3 t1= new Thread3();
+	Thread3 t2= new Thread3();
+	System.out.println("name of t1:"+t1.getName());
+	System.out.println("name of t2:"+t2.getName());
+
+t1.start();
+t2.start();
+t1.setName("Drashti");
+t2.setName("Balsara");
+System.out.println("after changing name"+t1.getName());
+System.out.println("after changing name"+t2.getName());
+
+}
+}
