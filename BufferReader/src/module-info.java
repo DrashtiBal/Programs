@@ -5,5 +5,5 @@
  * @author drashti.balsara
  *
  */
-module Exception5 {
+module BufferReader {
 }
