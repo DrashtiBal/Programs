@@ -7,18 +7,17 @@ static int option;
 	public static void main(String[] args) {
 		User u=new User();
 		CrudOperationImplementation ci=new CrudOperationImplementation();
-		//JdbcConnection con=new JdbcConnection();
+		
 		CrudOperationImplementation.getConnection();
 		Scanner s=new Scanner(System.in);
-		//CrudOperationImplementation ci=new CrudOperationImplementation();
+		
 		do {
-			//while(option!="E" || option!="e") { 
-				 //try {
+				 try {
 				    System.out.println("1. for Insert Details Of Employee");
-					System.out.println("2. for Print Details Of Emloyee");
-					System.out.println("3. for Print Single Employee Detail");
-					System.out.println("4. for Delete All Details of Employee");
-					System.out.println("5. for Delete Single Employee Details");
+					System.out.println("2. for Print Details Of All Emloyee");
+					System.out.println("3. for Print Single Employee Detail Using Id");
+					System.out.println("4. for Delete Details of All Employee");
+					System.out.println("5. for Delete Single Employee Details Using Id");
 					System.out.println("6. for Update Employee Details");
 					System.out.println("7. for Exit");
 			        System.out.println("Enter an option"); 
@@ -26,50 +25,27 @@ static int option;
 			       
 			  switch(option) { 
 			  case 1:
-				  //User u=new User();
+				  
 				  ci.insertUser(u);
-				  ci.getAllUser();
-					/*
-					 * System.out.println("id  " +u.getEid());
-					 * System.out.println("Fname "+u.getFname());
-					 * System.out.println("Lname "+u.getLname());
-					 * System.out.println("City "+u.getCity());
-					 * System.out.println("Age "+u.getAge());
-					 * System.out.println("Salary "+u.getSalary());
-					 */
-				  //System.out.println("Insert Details Of Employee:");
-				  s.nextLine();  
+				  		s.nextLine();  
 			  break;
 			  case 2:
-				  if(!User.isNull(u)) {
-		      System.out.println("===================================================================================");
-		      ci.getAllUser();
-		      System.out.println("===================================================================================");
-				  }
-				  else
-				  {
-					  System.out.println("===================================");
-					  System.out.println("your Account Has Not Been Created!!!");
-					  System.out.println("===================================");
-				  }
+				  System.out.println("===================================================================================");
+				  ci.getAllUser();
+				  System.out.println("===================================================================================");
+				  
 			  break;
 			  case 3:
-				  if(!User.isNull(u)) {
-		      System.out.println("===================================================================================");
-		      ci.getSingleUser();
-		      System.out.println("===================================================================================");
-				  }
-				  else
-				  {
-					  System.out.println("===================================");
-					  System.out.println("your Account Has Not Been Created!!!");
-					  System.out.println("===================================");
-				  }
+				  			  
+				  ci.getSingleUser(u);
+				  System.out.println("=================================================================================================");
+				  System.out.println("Eid:"+u.getEid()+" ,Fname:"+u.getFname()+", Lname:"+u.getLname()+" ,City:"+u.getCity()+" ,Age:"+u.getAge()+" ,Salary:"+u.getSalary());
+				  System.out.println("=================================================================================================");			  
+			 
 			  break;
 			  case 4:
 				  if(!User.isNull(u)) {
-					  ci.deleteAllUser(u);
-					  System.out.println("All user has ben deleted");
+					  ci.deleteAllUser();
 				  }
 				  else
 				  {
@@ -79,38 +55,26 @@ static int option;
 				  }
 			  break;
 			  case 5:
-				  if(!User.isNull(u)) {
-					  ci.deleteSingleuser(option);
-					  System.out.println("user has ben deleted");
-				  }
-				  else
-				  {
-					  System.out.println("===================================");
-					  System.out.println("your Account Has Not Been Created!!!");
-					  System.out.println("===================================");
-				  }
+				  
+				  ci.deleteSingleuser();
+				  
 			  break;
 			  case 6:
-				  if(!User.isNull(u)) {
-					  ci.updateSingleUser(option);
-					  System.out.println("user has ben updated");
-				  }
-				  else
-				  {
-					  System.out.println("===================================");
-					  System.out.println("your Account Has Not Been Created!!!");
-					  System.out.println("===================================");
-				  }
+				  ci.updateSingleUser(u);
 			  break;
-			  
-				 		//System.out.println("Your input is invalid");
-				 		//s.nextLine();*/
 			  case 7:
 					 System.out.println("Exit Menu");
-					// System.exit(0);
+					 System.exit(0);
 					 break;
+					 
+			  default:System.out.println("Invalid Option!! Please Enter Again"); 
 			        }
-			 }while(option!=7);
+			 }
+				 	catch (Exception i) {
+					System.out.println("Your input is mismatched");
+					s.nextLine();
+				}
+		}    while(option!=7);
 			  System.out.println("Thank You For Using Our Services");
 	}
 	}

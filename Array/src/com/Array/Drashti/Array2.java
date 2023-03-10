@@ -2,28 +2,28 @@ package com.Array.Drashti;
 
 public class Array2 {
 	
-	
-	public static void main(String[] args) {
-		int a[]={20,10,30,40};
-		test(a);
-		
-	}
-	
-	public static void test(int array[])
+
+	public static int  test(int array[],int length)
 	{
-		//int[] a;
-	int min=array[0];
 		
-	for(int i=1;i<=3;i++)
+		int temp;
+	for(int i=0;i<=length;i++)
 	{
-		if(min>array[i])
+		for(int j=1;j<=length;j++)
 				{
-			
-			System.out.println(min);
+					if(array[i]>array[j])
+					{
+					temp=array[i];
+					array[i]=array[j];
+					array[j]=temp;
+					}
 				}
-		else {
-			System.out.println("number is larger");
-		}
 	}
+	return array[0];
+	}
+	public static void main(String[] args) {
+		int a[]={20,5,30,2};
+		System.out.println("min number is:"+test(a,3));;
+		int length=a.length;
 	}
 }

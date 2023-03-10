@@ -54,6 +54,6 @@ public class User {
 		return "Eid:" +Eid+ "\n"+ "Fname:" +Fname+ "\n"+ "Lname:"  +Lname+ "\n"+ "City:" +City+ "\n"+ "Age:" +Age+ "\n"+ "Salary:" +Salary;
 }
 	public static boolean isNull(User u) {
-		return false;
+		return true;
 	}
 }

@@ -6,13 +6,13 @@ public interface CrudOperation {
 	
 	public void  getAllUser();
 	
-	public void getSingleUser(int eid);
+	public User getSingleUser(User u);
 	
-	public void deleteAllUser(User u);
+	public void deleteAllUser();
 	
-	public void deleteSingleuser(int eid);
+	public void deleteSingleuser();
 	
-	public void updateSingleUser(int eid);
+	public User updateSingleUser(User u);
 	
 	 
 }
