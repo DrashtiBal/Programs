@@ -18,7 +18,6 @@ public class EmployeeDAO {
 	static int rs;
 	static Statement s;
 	static ResultSet r;
-
 	public static Connection getConnection() throws Exception {
 		Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
 		String url = "jdbc:sqlserver://localhost:1433;database=test; encrypt=false";

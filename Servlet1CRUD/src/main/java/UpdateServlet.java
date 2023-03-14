@@ -41,17 +41,16 @@ public class UpdateServlet extends HttpServlet {
 
 		String id = request.getParameter("id");
 		int eid = Integer.parseInt(id);
-		//System.out.println(eid);
+		// System.out.println(eid);
 		Employee e = EmployeeDAO.GetUserById(eid);
 //Old data		
-		if(!(e.getId()==0))
-		{
-				// Enter new Data		
+		if (!(e.getId() == 0)) {
+			// Enter new Data
 			writer.print("<p>Update Employee Details</p>");
 			writer.print("<form action=UpdateServlet1?id=" + e.getId() + " method=post>");
 			writer.print("<table border='1'>");
-			writer.print(
-					"<tr><td>Enter Id To Be Updated</td><td><input type=text name=id value='" + e.getId() + "'></td></tr>");
+			writer.print("<tr><td>Enter Id To Be Updated</td><td><input type=text name=id value='" + e.getId()
+					+ "'></td></tr>");
 			writer.print("<tr><td>Enter Name To Be Updated</td><td><input type=text name=name value='" + e.getName()
 					+ "'></td></tr>");
 			writer.print("<tr><td>Enter Email To Be Updated</td><td><input type=text name=email value='" + e.getEmail()
@@ -62,11 +61,11 @@ public class UpdateServlet extends HttpServlet {
 			writer.print("</table>");
 			writer.print("</form>");
 			writer.print("</body></html>");
- 
-		}else {
+
+		} else {
 			writer.println("Id does not exist");
 			request.getRequestDispatcher("form1.html").include(request, response);
-			//response.sendRedirect("form1.html");
+			// response.sendRedirect("form1.html");
 		}
 
 	}
