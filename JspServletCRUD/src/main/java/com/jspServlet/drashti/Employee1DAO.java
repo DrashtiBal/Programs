@@ -73,6 +73,7 @@ public class Employee1DAO {
 
 	public static int updateUser(Employee1 e1) throws Exception {
 		//int u1=0;
+		try { 
 		Connection connection = Employee1DAO.getConnection();
 		ps = connection.prepareStatement("update employee2 set name=?,email=?,password=? where id=? ");
 		ps.setInt(4, e1.getId());
@@ -80,6 +81,10 @@ public class Employee1DAO {
 		ps.setString(2, e1.getEmail());
 		ps.setString(3, e1.getPassword());
 		rs= ps.executeUpdate();
+		}
+		catch (Exception e) {
+			System.out.println("Invalid Input");
+		}
 		return rs;
 	}
 	public static Employee1 getUserById(int eid) {

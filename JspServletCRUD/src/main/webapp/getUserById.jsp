@@ -17,7 +17,7 @@ Employee1 e1=Employee1DAO.getUserById(eid);
 out.print("<table border='1'>");
 out.print("<tr><th>Id</th><th>Name</th><th>Email</th><th>Password</th></tr>");
 out.println("<tr><td>"+e1.getId()+"</td><td>"+e1.getName()+"</td><td>"+e1.getEmail()+"</td><td>"+e1.getPassword()+"</td></tr>");
-out.print("<a href='insertUserForm.html'>Insert New Employee</a>");  
+out.print("<a href='InsertUserForm.html'>Insert New Employee</a>");  
 out.print("</table>");
 %>
 </body>

@@ -47,7 +47,11 @@
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="Employee"/>
-    <fullyQualifiedTypeName name="com.jspServlet.drashti.Employee1"/>
     <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="com.jspServlet.drashti.Employee1DAO"/>
+    <fullyQualifiedTypeName name="com.jspServlet.drashti.Employee1"/>
+    <fullyQualifiedTypeName name="javax.security.auth.login.Configuration"/>
+    <fullyQualifiedTypeName name="org.hibernate.cfg.Configuration"/>
+    <fullyQualifiedTypeName name="com.test.entities.Student"/>
+    <fullyQualifiedTypeName name="org.hibernate.service.ServiceRegistry"/>
 </qualifiedTypeNameHistroy>

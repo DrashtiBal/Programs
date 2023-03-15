@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\drashti.balsara\eclipse-workspace"/>
 			<item value="C:\Users\drashti.balsara\eclipse-workspace\project_1\src\project_1\pattern.java"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -26,12 +27,15 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.test1.MavenProject2"/>
 			<item value="com.test"/>
 		</list>
 		<list key="groupId">
+			<item value="com.test1"/>
 			<item value="com.test"/>
 		</list>
 		<list key="artifactId">
+			<item value="MavenProject2"/>
 			<item value="ProjectWithMaven"/>
 		</list>
 		<list key="projectNameTemplate">
