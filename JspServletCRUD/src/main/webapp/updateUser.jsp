@@ -10,7 +10,6 @@
 </head>
 <body>
 <%
-
 String id=request.getParameter("id");
 int eid=Integer.parseInt(id);
 Employee1 e1=Employee1DAO.getUserById(eid);
