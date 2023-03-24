@@ -11,7 +11,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-<a href="InsertUserForm.html">Insert User</a>&nbsp;
+<h2><center>CRUD Operation</center></h2>
+<h3><center>Welcome Page</center></h3>
+
+<div class=button>
+<button><a style=text-decoration:none href="addUserForm.html" >Add Student details Here</a></button>
+</div>
 	<%
 	Employee1 e1 = new Employee1();
 	List<Employee1> l2 = Employee1DAO.viewAllUser();

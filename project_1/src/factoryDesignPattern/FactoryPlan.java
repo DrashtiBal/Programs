@@ -11,7 +11,14 @@ public class FactoryPlan {
 		String string = s.next();
         NotificationFactory notificationFactory = new NotificationFactory();
         Notification notification = notificationFactory.createNotification(string);
+        if(notification!=null)
+        {
         notification.notifyUser();
+        }
+	else
+	{
+		System.out.println("Invalid Input");
     }
 	
+}
 }

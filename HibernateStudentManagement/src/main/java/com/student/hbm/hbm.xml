@@ -6,8 +6,8 @@
     <hibernate-mapping>
     <class table="student1" name="com.student.drashti.Student">
     <id name="id" type="int" column="stu_id">
-    <generator class="identity">
-    </generator>
+    <!-- <generator class="native"> -->
+   <!--  </generator> -->
     </id>
     <property name="name" type="string"></property>
     <property name="email" type="string"></property>

@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\drashti.balsara\eclipse-workspace\HibernateStudentManagement\src\main\java\com\student\drashti\StudentDAO.java"/>
 			<item value="C:\Users\drashti.balsara\eclipse-workspace\HibernateStudentManagement"/>
 			<item value="C:\Users\drashti.balsara\eclipse-workspace"/>
 			<item value="C:\Users\drashti.balsara\eclipse-workspace\project_1\src\project_1\pattern.java"/>
@@ -28,17 +29,20 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.rivet.SpringStudentMgt"/>
 			<item value="com.User.MavenStudentManagement"/>
 			<item value="com.User.StudentManagement"/>
 			<item value="com.test1.MavenProject2"/>
 			<item value="com.test"/>
 		</list>
 		<list key="groupId">
+			<item value="com.1rivet"/>
 			<item value="com.User"/>
 			<item value="com.test1"/>
 			<item value="com.test"/>
 		</list>
 		<list key="artifactId">
+			<item value="SpringStudentMgt"/>
 			<item value="MavenStudentManagement"/>
 			<item value="StudentManagement"/>
 			<item value="MavenProject2"/>
