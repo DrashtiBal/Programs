@@ -5,20 +5,14 @@
 <beans>
 	 <bean name="stu" class="com.rivet.SpringStudentMgt.Student">
 		<property name="id" value="101"></property>
-
 		<property name="name" value="drashti"></property>
-
 		<property name="address" ref="address"></property>
 	</bean> 
-
-
 	<bean name="address" class="com.rivet.SpringStudentMgt.Address">
 		<property name="street" value="Mograwadi"></property>
 		<property name="city" value="valsad"></property>
 	</bean>
-	
-	
-	 <bean name="stu1" class="com.rivet.SpringStudentMgt.Student">
+	 <bean name="stu1" class="com.rivet.SpringStudentMgt.Student" >
 		<constructor-arg value="102"></constructor-arg>
 		<constructor-arg value="diya"></constructor-arg>
 		<constructor-arg  ref="address"></constructor-arg>

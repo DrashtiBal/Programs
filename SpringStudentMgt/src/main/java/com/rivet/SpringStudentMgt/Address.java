@@ -12,7 +12,6 @@ public class Address {
 			this.street = street;
 			this.city = city;
 		}
-		
 		public String getStreet() {
 			return street;
 		}
@@ -30,5 +29,4 @@ public class Address {
 		public String toString() {
 			return "[street=" + street + ", city=" + city + "]";
 		}
-		
 }
