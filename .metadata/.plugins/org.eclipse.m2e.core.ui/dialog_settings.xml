@@ -85,6 +85,7 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\drashti.balsara\eclipse-workspace\08"/>
 			<item value="C:\Users\drashti.balsara\Downloads\employee-management"/>
 			<item value="C:\Users\drashti.balsara\Downloads\DeskBook"/>
 			<item value="C:\Users\drashti.balsara\Downloads\deskbook-java-service-Develop"/>
@@ -97,6 +98,7 @@
 			<item value="C:\Users\drashti.balsara\eclipse-workspace\demo3355"/>
 		</list>
 		<list key="projectNameTemplate">
+			<item value="deskbook-user-servicesses"/>
 			<item value="[artifactId]"/>
 			<item value="[artifactId]-TRUNK"/>
 			<item value="[artifactId]-[version]"/>
